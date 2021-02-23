@@ -58,18 +58,28 @@ sudo aptitude install -y npm
 # reset version coc-extenstion 
 # unlock path of neovim provider
 export PATH=$PATH:$HOME/.local/bin/
-sudo chown $USER $HOME/.cache/pip/
+echo "{} " > $HOME/.config/coc/extensions/package.json
+
+
+# reset version coc-extenstion 
+# unlock path of neovim provider
+export PATH=$PATH:$HOME/.local/bin/
 echo "{} " > $HOME/.config/coc/extensions/package.json
 sudo chown $USER /usr/local/lib/
+sudo chown $USER $HOME/.cache/pip/
+sudo chown $USER $HOME/.cache/pip/http/
+sudo chown $USER $HOME/.local/lib/python3
+sudo chown $USER $HOME/.local/lib/python2
+sudo chown $USER $HOME/.local/lib/python
 
-
-sudo pip3 install         \
+sudo pip3 --default-timeout=1000 install \
         pynvim --user     \
         neovim-remote     \
         ueberzug          \
 
-
-python3 -m pip install --user --upgrade pynvim
+sudo pip3 install --user --upgrade  --default-timeout=10000  pynvim
+sudo pip2 install --user --upgrade  --default-timeout=10000  pynvim
+python3 -m pip install --upgrade pynvim
 python2 -m pip install --user --upgrade pynvim
 
 sudo npm install -g neovim
