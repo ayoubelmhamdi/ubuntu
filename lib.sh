@@ -50,7 +50,9 @@ sudo apt-get install -y   \
 
 
 curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
-sudo apt-get  install -y  aptitude
+sudo apt-get install -y \
+      	aptitude        \
+        nodejs          
 sudo aptitude install -y npm 
 
 # reset version coc-extenstion 
