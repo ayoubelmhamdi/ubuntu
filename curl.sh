@@ -1,9 +1,9 @@
 #!/bin/bash
 
-
-sudo apt-get update -y 2>&1 /dev/null
-sudo apt-get upgrade -y 2>&1 /dev/null
-sudo apt-get install git -y 2>&1 /dev/null
+clear
+sudo apt-get update -y >/dev/null 2>&1
+sudo apt-get upgrade -y >/dev/null 2>&1
+sudo apt-get install git -y >/dev/null 2>&1
 
 
 #mkdir $HOME/UBUNTU
@@ -13,13 +13,13 @@ echo "\n\n\t "\
 
 git clone \
     https://github.com/ayoubelmhamdi/ubuntu.git  \
-    $HOME/UBUNTU 2>&1 /dev/null
+    $HOME/UBUNTU >/dev/null 2>&1
 
 sh $HOME/UBUNTU/install.sh
 
 
 
 cd $HOME/UBUNTU/
-sudo rm -r node_modules package.json  2>&1 /dev/null
+sudo rm -r node_modules package.json  >/dev/null 2>&1
 
 echo  "\n\n END"

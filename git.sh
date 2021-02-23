@@ -1,10 +1,10 @@
 #!/bin/sh
 
 test -f $HOME/.ssh/id_ed25519 && \
-  rm -f $HOME/.ssh/id_ed25519 2>&1 /dev/null
+  rm -f $HOME/.ssh/id_ed25519 >/dev/null 2>&1
 
 test -f $HOME/.ssh/id_ed25519.pub && \
-  rm -f $HOME/.ssh/id_ed25519.pub 2>&1 /dev/null
+  rm -f $HOME/.ssh/id_ed25519.pub >/dev/null 2>&1
 
 
 cat \
