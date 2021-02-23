@@ -57,8 +57,8 @@ sudo aptitude install -y npm
 
 # reset version coc-extenstion 
 # unlock path of neovim provider
-
-
+export PATH=$PATH:$HOME/.local/bin/
+sudo chown $USER $HOME/.cache/pip/
 echo "{} " > $HOME/.config/coc/extensions/package.json
 sudo chown $USER /usr/local/lib/
 
