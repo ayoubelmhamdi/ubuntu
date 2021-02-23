@@ -43,11 +43,13 @@ git config --global user.email "ayoub.elmhamdi@gmail.com"
 
 cd $HOME/UBUNTU
 git remote set-url origin \
-    git@github.com:ayoubelmhamdi/ubuntu.git
+    git@github.com:ayoubelmhamdi/ubuntu.git \
+    >/dev/null 2>&1
     
 cd $HOME/dotfiles
 git remote set-url origin \
-    git@github.com:ayoubelmhamdi/dotfiles.git
+    git@github.com:ayoubelmhamdi/dotfiles.git \
+    >/dev/null 2>&1
 
 #because is private
 #cd $HOME/scripts
@@ -56,6 +58,7 @@ git remote set-url origin \
 
 cd $HOME/.config/nvim
 git remote set-url origin \
-    git@github.com:ayoubelmhamdi/nvim.git
+    git@github.com:ayoubelmhamdi/nvim.git \
+    >/dev/null 2>&1
 
 #++++++++++++++++++++++++++++++++++++++++
