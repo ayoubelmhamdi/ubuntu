@@ -1,10 +1,10 @@
 #!/bin/sh
 
 test -f $HOME/.ssh/id_ed25519 && \
-  rm -f $HOME/.ssh/id_ed25519
+  rm -f $HOME/.ssh/id_ed25519 2>&1 /dev/null
 
 test -f $HOME/.ssh/id_ed25519.pub && \
-  rm -f $HOME/.ssh/id_ed25519.pub
+  rm -f $HOME/.ssh/id_ed25519.pub 2>&1 /dev/null
 
 
 cat \
@@ -17,7 +17,6 @@ cat \
 
 #++++++++++++++++++++++++++++++++++++++++
 
-clear
 echo "\n\n\t" 										\
      "ssh-key :\n\t" 								\
 
