@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#cd $HOME/neovim
-#make CMAKE_BUILD_TYPE=Release
-#sudo make install
+cd $HOME/neovim
+make CMAKE_BUILD_TYPE=Release
+sudo make install
 
 # this folder for tell vim savetmp file there
 sudo chown $USER $HOME/.local/
