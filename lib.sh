@@ -22,6 +22,7 @@ path-coc-ex3='$HOME/.config/nvim/package.json'
 
 sudo apt-get update  -y   
 sudo apt-get install -y   \
+        neofetch          \
         python3           \
         python2.7         \
         python-pip        \
@@ -113,8 +114,8 @@ git clone \
     https://github.com/neovim/neovim.git	\
     $HOME/neovim 
 
-git clone \
-    https://github.com/ayoubelmhamdi/dotfiles-ayoub.git  \
+git clone --bare \
+    https://github.com/ayoubelmhamdi/dotfiles.git  \
     $HOME/dotfiles 
 
 #git clone \
