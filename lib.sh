@@ -60,17 +60,15 @@ sudo aptitude install -y npm
 export PATH=$PATH:$HOME/.local/bin/
 echo "{} " > $HOME/.config/coc/extensions/package.json
 
-
-# reset version coc-extenstion 
-# unlock path of neovim provider
-export PATH=$PATH:$HOME/.local/bin/
-echo "{} " > $HOME/.config/coc/extensions/package.json
 sudo chown $USER /usr/local/lib/
 sudo chown $USER $HOME/.cache/pip/
 sudo chown $USER $HOME/.cache/pip/http/
-sudo chown $USER $HOME/.local/lib/python3
-sudo chown $USER $HOME/.local/lib/python2
-sudo chown $USER $HOME/.local/lib/python
+sudo chown $USER $HOME/.local/lib/python3*
+sudo chown $USER $HOME/.local/lib/python2*
+
+# used for fix provider3
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo python3 get-pip.py --force-reinstall
 
 sudo pip3 --default-timeout=1000 install \
         pynvim --user     \
