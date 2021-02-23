@@ -6,16 +6,16 @@ sudo apt-get upgrade -y
 sudo apt-get install git -y
 
 
-#mkdir $HOME/debian
+#mkdir $HOME/UBUNTU
 clear
 echo "\n\n\t "\
      "begin install \n\n"
 
 git clone \
-    https://github.com/ayoubelmhamdi/debian.git  \
-    $HOME/debian
+    https://github.com/ayoubelmhamdi/ubuntu.git  \
+    $HOME/UBUNTU
 
-sh $HOME/debian/install.sh
+sh $HOME/UBUNTU/install.sh
 
 
 
