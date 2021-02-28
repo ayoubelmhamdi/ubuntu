@@ -1,6 +1,5 @@
 #!/bin/bash
 
->/dev/null 2>&1
 sh $HOME/UBUNTU/lib.sh     >/dev/null 2>&1 
 echo "lib.sh"
 sh $HOME/UBUNTU/git.sh  
