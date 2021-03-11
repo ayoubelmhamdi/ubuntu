@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/data/data/com.termux/files/usr/bin/sh
 
 test -f $HOME/.ssh/id_ed25519 && \
   rm -f $HOME/.ssh/id_ed25519 >/dev/null 2>&1

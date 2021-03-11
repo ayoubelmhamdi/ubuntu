@@ -80,9 +80,11 @@ sudo pip2 install --user --upgrade  --default-timeout=10000  pynvim
 python3 -m pip install --upgrade pynvim
 python2 -m pip install --user --upgrade pynvim
 
-sudo npm install -g neovim
+npm i -g npm                    \
+         bash-language-server   \
+         neovim
 
-#sudo npm install          \
+#sudo npm install         \
 #	 coc-explorer		  \
 #	 coc-snippets		  \
 #	 coc-json			  \
