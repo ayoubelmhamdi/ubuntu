@@ -1,7 +1,6 @@
 #!/bin/bash
 
-[[ "$ZSH" != "deja"  ]] && rm -r $HOME/.oh-my-zsh/
-sh  $HOME/UBUNTU/zsh-oh.sh
+[[ -z "$_isZSH" ]] && rm -rf ~/.oh-my-zsh/;sh  $HOME/UBUNTU/zsh-oh.sh
 
 git clone \
     https://github.com/zsh-users/zsh-autosuggestions.git \
