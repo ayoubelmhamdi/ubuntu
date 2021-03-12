@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo rm -r $HOME/.oh-my-zsh/
+[[ "$ZSH" != "deja"  ]] && rm -r $HOME/.oh-my-zsh/
 sh  $HOME/UBUNTU/zsh-oh.sh
 
 git clone \
