@@ -17,13 +17,13 @@ cat \
 
 #++++++++++++++++++++++++++++++++++++++++
 
-echo "\n\n\t" 										\
+echo -e "\n\n\t" 										\
      "ssh-key :\n\t" 								\
 
 cat  $HOME/.ssh/id_ed25519.pub 						\
   >> $HOME/UBUNTU-ssh-github.txt					\
 
-echo "\n\n\t" 										\
+echo -e "\n\n\t" 										\
      "add this line to :\n\n" 						\
      "https://github.com/settings/ssh/new \n\n\t"	\
      "for git private me@scripts frome github\n"	\
