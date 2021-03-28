@@ -1,16 +1,16 @@
-# UBUNTU
+# TERMUX
 ### curl
 ``
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ayoubelmhamdi/ubuntu/master/curl.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ayoubelmhamdi/termux/master/curl.sh)"
 ``
 ### ssh
 
 ``
-git clone git@github.com:ayoubelmhamdi/ubuntu.git $HOME/UBUNTU
+git clone git@github.com:ayoubelmhamdi/termux.git $HOME/TERMUX
 ``
 
 ### https
 
 ``
-git clone https://github.com/ayoubelmhamdi/ubuntu.git $HOME/UBUNTU
+git clone https://github.com/ayoubelmhamdi/termux.git $HOME/TERMUX
 ``
