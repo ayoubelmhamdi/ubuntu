@@ -1,9 +1,9 @@
 #/bin/bash
 
-yes|apt update
+yes|apt update -y
 yes|apt list --upgradable
-yes|apt update
-yes|apt upgrade
+yes|apt update -y
+yes|apt upgrade -y
 
 pkg install unstable-repo -y
 
