@@ -14,6 +14,7 @@ apt install                \
         zsh                \
         zsh                \
         openssh            \
+        neovim             \
         nodejs             \
         python             \
         tar                \
@@ -40,15 +41,8 @@ apt install                \
 
 /data/data/com.termux/files/usr/bin/npm     \
         i                    \
-	-g                   \
         bash-language-server \
         neovim
-
-sh \
-  -c 'curl  \
-  -fLo  "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim \
-  --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
 
 
 
