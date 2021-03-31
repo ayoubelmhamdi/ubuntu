@@ -1,10 +1,11 @@
 #/bin/bash
 
-apt update -y
-apt update -y
+yes|apt update
+yes|apt list --upgradable
+yes|apt update
+yes|apt upgrade
+
 pkg install unstable-repo -y
-apt list --upgradable
-apt upgrade -y
 
 apt install                \
         git                \
