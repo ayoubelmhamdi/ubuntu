@@ -1,14 +1,12 @@
 #!/bin/bash
 
 clear
-sudo apt update -y >/dev/null 2>&1
-sudo apt upgrade -y >/dev/null 2>&1
-sudo apt install git -y >/dev/null 2>&1
+apt install git -y >/dev/null 2>&1
 
 
 #mkdir $HOME/TERMUX
 clear
-echo "\n\n\t "\
+echo -e "\n\n\t "\
      "begin install \n\n"
 
 git clone \
@@ -19,7 +17,4 @@ sh $HOME/TERMUX/install.sh
 
 
 
-cd $HOME/TERMUX/
-sudo rm -r node_modules package.json  >/dev/null 2>&1
-
-echo  "\n\n END"
+echo -e "\n\n END"
