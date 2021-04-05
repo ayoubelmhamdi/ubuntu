@@ -1,9 +1,9 @@
 #!/bin/bash
 
 clear
-sudo apt-get update -y >/dev/null 2>&1
-sudo apt-get upgrade -y >/dev/null 2>&1
-sudo apt-get install git -y >/dev/null 2>&1
+sudo apt update -y >/dev/null 2>&1
+sudo apt upgrade -y >/dev/null 2>&1
+sudo apt install git -y >/dev/null 2>&1
 
 
 #mkdir $HOME/TERMUX
