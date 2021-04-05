@@ -1,6 +1,7 @@
 #!/bin/bash
 
 clear
+apt update -y >/dev/null 2>&1
 apt install git -y >/dev/null 2>&1
 
 
