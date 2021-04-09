@@ -1,17 +1,13 @@
 #!/bin/bash
 
 cd $HOME/neovim
-make CMAKE_BUILD_TYPE=Release
+#make CMAKE_BUILD_TYPE=Release
 sudo make install
 
 # this folder for tell vim savetmp file there
-sudo chown $USER $HOME/.local/
 mkdir -p $HOME/.local/tmp/
 
-mkdir -p $HOME/.config/coc/extensions 
-cd $HOME/.config/coc/extensions
 
-[ ! -f package.json ] && echo '{"dependencies":{}}'> package.json
 
 #+++++++++++++++++++++++++++++++++++++++++++++++
 
