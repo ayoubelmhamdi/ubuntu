@@ -12,20 +12,19 @@
 mkdir -p $HOME/.config/coc/extensions/ 
 mkdir -p $HOME/.config/nvim/
 
-path-coc-ex1='$HOME/.config/coc/extensions'
-path-coc-ex3='$HOME/.config/nvim/package.json'
+path-coc-ex1="$HOME/.config/coc/extensions"
+path-coc-ex3="$HOME/.config/nvim/package.json"
 
 [ ! -f path-coc-ex1 ] && echo '{"dependencies":{}}'> package.json
 [ ! -f path-coc-ex2 ] && echo '{"dependencies":{}}'> package.json
 
 
 
-sudo apt-get update  -y   
-sudo apt-get install -y   \
+sudo apt update  -y   
+sudo apt install     -y   \
         neofetch          \
         python3           \
-        python2.7         \
-        python-pip        \
+        python2           \
         python3-pip       \
         ranger            \
         ninja-build       \
@@ -50,7 +49,7 @@ sudo apt-get install -y   \
 
 
 curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
-sudo apt-get install -y \
+sudo apt install -y \
       	aptitude        \
         nodejs          
 sudo aptitude install -y npm 
@@ -58,7 +57,7 @@ sudo aptitude install -y npm
 # reset version coc-extenstion 
 # unlock path of neovim provider
 export PATH=$PATH:$HOME/.local/bin/
-echo "{} " > $HOME/.config/coc/extensions/package.json
+echo "{}" > $HOME/.config/coc/extensions/package.json
 
 sudo chown $USER /usr/local/lib/
 sudo chown $USER $HOME/.cache/pip/
@@ -68,21 +67,21 @@ sudo chown $USER $HOME/.local/lib/python2*
 
 # used for fix provider3
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-sudo python3 get-pip.py --force-reinstall
+python3 get-pip.py --force-reinstall
 
-sudo pip3 --default-timeout=1000 install \
-        pynvim --user     \
+pip3 --default-timeout=1000 install \
+        pynvim            \
         neovim-remote     \
         ueberzug          \
 
-sudo pip3 install --user --upgrade  --default-timeout=10000  pynvim
-sudo pip2 install --user --upgrade  --default-timeout=10000  pynvim
+pip3 install --user --upgrade  --default-timeout=10000  pynvim
+pip2 install --user --upgrade  --default-timeout=10000  pynvim
 python3 -m pip install --upgrade pynvim
 python2 -m pip install --user --upgrade pynvim
 
-npm i -g npm                    \
-         bash-language-server   \
-         neovim
+npm i npm                    \
+      bash-language-server   \
+      eovim
 
 #sudo npm install         \
 #	 coc-explorer		  \
